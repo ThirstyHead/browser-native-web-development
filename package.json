@@ -1,0 +1,22 @@
+{
+  "name": "browser-native-web-development",
+  "version": "0.1.0",
+  "description": "[PRESENTATION] Browser-Native Web Development",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThirstyHead/browser-native-web-development.git"
+  },
+  "author": "Scott Davis <scott@thirstyhead.com>",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/ThirstyHead/browser-native-web-development/issues"
+  },
+  "homepage": "https://github.com/ThirstyHead/browser-native-web-development#readme",
+  "devDependencies": {
+    "talk-o-vision": "github:thirstyhead/talk-o-vision"
+  }
+}
