@@ -2,19 +2,34 @@
 <html lang="en">
   <head>
     <title>Recipe: No Knead Bread</title>
+
+    <script>
+      window.addEventListener('load', init);
+
+      function init(){
+        let b = document.querySelector('button');
+        b.addEventListener('click', readIntro);
+      }
+
+      function readIntro(event){
+        let paragraphs = document.querySelectorAll('p');
+        for(let p of paragraphs){
+          let msg = new SpeechSynthesisUtterance(p.innerText);
+          window.speechSynthesis.speak(msg);
+        }
+      }
+    </script>
   </head>
 
   <body>
     <h1>No Knead Bread</h1>
+    <button>Read</button>
+    
     <p>No kneading required, 4 simple ingredients, baked in a Dutch Oven. The result is simple perfection, hands down the best bread you'll ever eat!</p>
 
     <p>The simplicity of this no knead bread is what I love the most and the fact that your entire house will smell of fresh bread as you bake this. This bread could not get any easier, it’s even easier than the artisan bread.</p>
 
 
-  <script>
-    let ingredients = document.querySelector('h2');
-    alert(`My ingredients heading: ${ingredients}`);
-  </script>
 
     <h2>Ingredients</h2>
     <ul>
