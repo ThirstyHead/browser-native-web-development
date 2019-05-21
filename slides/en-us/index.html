@@ -1,0 +1,1916 @@
+<html lang="en"><head>
+    <title>Browser-Native Web Development</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1,
+                                   user-scalable=yes">
+    <meta name="author" content="Scott Davis <scott@thirstyhead.com>">
+    <meta name="description" content="">
+    <meta name="keywords" content="Browser Native HTML CSS JavaScript Framework ">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/talk-o-vision.css">
+
+    <style>
+      .main-title{
+        background: url('slides/title/no-knead-dutch-oven-crusty-bread-1.jpg') no-repeat center center;
+        background-size: contain;
+      }
+
+      .banner{
+        background-color: var(--theme-foreground-color);
+        opacity: 0.7;
+        top: 5vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 hidden="" aria-hidden="false">Browser-Native Web Development</h1>
+    <main class="slideshow">
+      <section class="main-title" id="1" data-src="slides/title">
+        <h2 hidden="" aria-hidden="false"></h2>
+        <figure>
+          <div class="banner">
+          The Framework-Free Web 
+ 
+            <div class="subtitle">
+              Browser-Native Web Development
+            </div>
+            <div class="bio">
+              <br>
+              Scott Davis<br>
+              <a href="mailto:scott@thirstyhead.com">scott@thirstyhead.com</a><br>
+              <a href="https://twitter.com/scottdavis99">@scottdavis99</a>
+            </div>
+          </div>
+          <figcaption>
+            <p>
+            </p>
+            <p>
+              Presented by Scott Davis. His email address is
+              scott@thirstyhead.com. His Twitter handle is @scottdavis99.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+      <!-- <section data-src="slides/instructions"></section> -->
+      <section class="theme-invert" id="2" data-src="slides/bio">
+        <h2 hidden="" aria-hidden="false">Biography</h2>
+        <audio src="slides/bio/audio.mp3"></audio>
+        <figure>
+          <img src="slides/bio/scott-davis-bio.png" alt="Scott Davis' Biography" class="contain">
+
+          <figcaption>
+           <p>Hi! My name is Scott Davis. I'm currently a Principle Engineer
+             with ThoughtWorks. Before that, I ran a software consultancy out
+             of Denver, Colorado called ThirstyHead. </p>
+
+           <p>I've been writing about web development for years -- articles
+             for IBM, books for O'Reilly and the Pragmatic Bookshelf, and most
+             recently videos for O'Reilly as well.</p>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="3" data-src="slides/sadhya">
+        <h2 hidden="" aria-hidden="false">Sadhya</h2>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Sadhya">
+          <img src="slides/sadhya/sadhya.jpg" alt="Sadhya" class="contain" data-src="https://en.wikipedia.org/wiki/Sadhya">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="4" data-src="slides/proto-bread">
+        <h2 hidden="" aria-hidden="false">Proto-Bread</h2>
+        <figure>
+          <img src="slides/proto-bread/proto-bread.jpg" alt="Proto-bread" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="5" data-src="slides/naan">
+        <h2 hidden="" aria-hidden="false">Naan</h2>
+        <figure>
+          <a href="https://www.196flavors.com/india-naan/">
+          <img src="slides/naan/naan.jpg" alt="Naan" class="contain" data-src="https://www.196flavors.com/india-naan/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="6" data-src="slides/proto-bread-2">
+        <h2 hidden="" aria-hidden="false">Proto-Bread 2</h2>
+        <figure>
+          <img src="slides/proto-bread-2/proto-bread-2.jpg" alt="Proto-bread" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="7" data-src="slides/conways-law">
+        <h2 hidden="" aria-hidden="false">Conway's Law</h2>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Conway%27s_law">
+          <img src="slides/conways-law/conways-law.png" alt="Conway's Law" class="contain" data-src="https://en.wikipedia.org/wiki/Conway%27s_law">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="8" data-src="slides/conways-law-2">
+        <h2 hidden="" aria-hidden="false">Conway's Law</h2>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Conway%27s_law">
+          <img src="slides/conways-law-2/conways-law-2.png" alt="Conway's Law" class="contain" data-src="https://en.wikipedia.org/wiki/Conway%27s_law">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="9" data-src="slides/conways-law-3">
+        <h2 hidden="" aria-hidden="false">Conway's Law (HTML, CSS, and JS)</h2>
+        <figure>
+          <img src="slides/conways-law-3/exit-html.png" alt="" class="contain-half left" data-src="">
+
+          <img src="slides/conways-law-3/exit-js.png" alt="" class="contain-half right" data-src="">
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="10" data-src="slides/no-knead-bread">
+        <h2 hidden="" aria-hidden="false">No Knead Bread</h2>
+        <figure>
+          <a href="https://www.jocooks.com/recipes/no-knead-bread/">
+          <img src="slides/no-knead-bread/no-knead-bread.png" alt="No Knead Bread" class="contain" data-src="https://www.jocooks.com/recipes/no-knead-bread/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="11" data-src="slides/spacer">
+        <h2 hidden="" aria-hidden="false"></h2>
+        <figure>
+&nbsp;
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      
+      <section id="12" data-src="slides/alan-perlis-not-worth-knowing">
+        <h2 hidden="" aria-hidden="false">Alan Perlis - Not Worth Knowing</h2>
+        <figure>
+          <img src="slides/alan-perlis-not-worth-knowing/alan-perlis-not-worth-knowing.jpg" alt="Alan Perlis - Not Worth Knowing" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="13" data-src="slides/title-act-1">
+        <h2 aria-hidden="false">Act 1</h2>
+        <figure>
+          <h3>Form follows <span class="highlight">Function</span><br>
+            <i>- or -</i><br>
+            Syntax shadows <span class="highlight">Semantics</span>
+          </h3>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      
+      <section id="14" data-src="slides/bread-text">
+        <h2 aria-hidden="false">bread.txt</h2>
+        <figure>
+          <img src="slides/bread-text/bread-text.png" alt="Bread - Text" class="contain-with-header" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="15" data-src="slides/bread-html">
+        <h2 aria-hidden="false">bread.html</h2>
+        <figure>
+          <img src="slides/bread-html/bread-html.png" alt="Bread - HTML" class="contain-with-header" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="16" data-src="slides/html-5.2-spec">
+        <h2 hidden="" aria-hidden="false">HTML 5.2 Spec</h2>
+        <figure>
+          <a href="https://www.w3.org/TR/html52/">
+          <img src="slides/html-5.2-spec/html-5.2-spec.png" alt="HTML 5.2 Spec" class="contain" data-src="https://www.w3.org/TR/html52/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="17" data-src="slides/html-spec-semantics">
+        <h2 hidden="" aria-hidden="false">HTML Spec - Semantics</h2>
+        <figure>
+          <a href="https://www.w3.org/TR/html52/introduction.html#background">
+          <img src="slides/html-spec-semantics/html-spec-semantics.png" alt="HTML Spec - Semantics" class="contain" data-src="https://www.w3.org/TR/html52/introduction.html#background">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="18" data-src="slides/semantics">
+        <h2 hidden="" aria-hidden="false">Semantics</h2>
+        <figure>
+          <img src="slides/semantics/semantics.png" alt="Semantics" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="19" data-src="slides/html-spec-toc">
+        <h2 hidden="" aria-hidden="false">HTML Spec - TOC</h2>
+        <figure>
+          <a href="https://www.w3.org/TR/html52/introduction.html#structure-of-this-specification">
+          <img src="slides/html-spec-toc/html-spec-toc.png" alt="HTML Spec - TOC" class="contain" data-src="https://www.w3.org/TR/html52/introduction.html#structure-of-this-specification">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="20" data-src="slides/html-spec-toc-2">
+        <h2 hidden="" aria-hidden="false">HTML Spec - TOC</h2>
+        <figure>
+          <a href="https://www.w3.org/TR/html52/introduction.html#structure-of-this-specification">
+          <img src="slides/html-spec-toc-2/html-spec-toc-2.png" alt="HTML Spec - TOC" class="contain" data-src="https://www.w3.org/TR/html52/introduction.html#structure-of-this-specification">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <!-- <section data-src="slides/html-spec-syntax"></section> -->
+      <section id="21" data-src="slides/sheet-music">
+        <h2 hidden="" aria-hidden="false">Sheet Music</h2>
+        <figure>
+          <a href="https://pixabay.com/photos/violin-music-score-mozart-1085606/">
+          <img src="slides/sheet-music/sheet-music.jpg" alt="Sheet Music" class="contain" data-src="https://pixabay.com/photos/violin-music-score-mozart-1085606/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="22" data-src="slides/html-spec-simple-doc">
+        <h2 hidden="" aria-hidden="false">HTML Spec - Simple Doc</h2>
+        <figure>
+          <a href="https://www.w3.org/TR/html52/semantics.html#semantics">
+          <img src="slides/html-spec-simple-doc/html-spec-simple-doc.png" alt="HTML Spec - Simple Doc" class="contain" data-src="https://www.w3.org/TR/html52/semantics.html#semantics">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="23" data-src="slides/html-spec-simple-doc-rendered">
+        <h2 hidden="" aria-hidden="false">HTML Spec - Simple Doc Rendered</h2>
+        <figure>
+          <img src="slides/html-spec-simple-doc-rendered/html-spec-simple-doc-rendered.png" alt="HTML Spec - Simple Doc Rendered" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="24" data-src="slides/semantics-vs-styling">
+        <h2 aria-hidden="false">Semantics vs Styling</h2>
+        <figure>
+          <p>
+          It's easy to conflate styling with <span class="highlight">semantics</span>
+          </p>
+
+          <p>
+          HTML elements are for defining semantics, regardless of how they are styled.
+          </p>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="25" data-src="slides/bread-html-2">
+        <h2 aria-hidden="false">bread.html</h2>
+        <figure>
+          <img src="slides/bread-html-2/bread-html.png" alt="Bread - HTML" class="contain-with-header" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="26" data-src="slides/bread-html-3-block">
+        <h2 aria-hidden="false">Using a Made-up Element: &lt;block&gt;</h2>
+        <figure>
+<pre><code>
+&lt;block&gt;No Knead Bread&lt;/block&gt;
+No kneading required, 4 simple ingredients, baked 
+in a Dutch Oven. The result is simple perfection, 
+hands down the best bread you'll ever eat!
+</code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="27" data-src="slides/bread-html-3">
+        <h2 aria-hidden="false">bread.html</h2>
+        <figure>
+          <img src="slides/bread-html-3/bread-html.png" alt="Bread - HTML" class="contain-with-header" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="28" data-src="slides/bread-html-3-block-style">
+        <h2 aria-hidden="false">Styling a Made-up Element: &lt;block&gt;</h2>
+        <figure>
+<pre><code>
+&lt;style&gt;
+block{
+  display: block;
+}
+&lt;/style&gt;
+
+&lt;block&gt;No Knead Bread&lt;/block&gt;
+No kneading required, 4 simple ingredients, baked 
+in a Dutch Oven. The result is simple perfection, 
+hands down the best bread you'll ever eat!
+</code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="29" data-src="slides/bread-html-3-rendered">
+        <h2 aria-hidden="false">bread.html</h2>
+        <figure>
+          <img src="slides/bread-html-3-rendered/bread-html-3-rendered.png" alt="Bread - HTML" class="contain-with-header" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="30" data-src="slides/bread-html-4-html">
+        <h2 aria-hidden="false">Bread Recipe in basic HTML</h2>
+        <figure>
+<pre><code>
+    &lt;h1&gt;No Knead Bread&lt;/h1&gt;
+    &lt;p&gt;No kneading required, 4 simple ingredients, baked 
+    in a Dutch Oven. The result is simple perfection, hands 
+    down the best bread you'll ever eat!&lt;/p&gt;
+
+    &lt;h2&gt;Ingredients&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;3 cups all-purpose flour&lt;/li&gt;
+      &lt;li&gt;1 3/4 tsp salt&lt;/li&gt;
+      &lt;li&gt;1/2 tsp active dry yeast&lt;/li&gt;
+      &lt;li&gt;1 1/2 cups water room temperature&lt;/li&gt;
+    &lt;/ul&gt;
+</code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="31" data-src="slides/bread-html-4-rendered">
+        <h2 hidden="" aria-hidden="false">Bread Recipe - Rendered</h2>
+        <figure>
+          <img src="slides/bread-html-4-rendered/bread-html-4-rendered.png" alt="Bread Recipe - Rendered" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="32" data-src="slides/html-spec-h1">
+        <h2 hidden="" aria-hidden="false">HTML Spec - H1</h2>
+        <figure>
+          <a href="https://www.w3.org/TR/html52/sections.html#the-h1-h2-h3-h4-h5-and-h6-elements">
+          <img src="slides/html-spec-h1/html-spec-h1.png" alt="HTML Spec - H1" class="contain" data-src="https://www.w3.org/TR/html52/sections.html#the-h1-h2-h3-h4-h5-and-h6-elements">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="33" data-src="slides/html-spec-h1-2">
+        <h2 hidden="" aria-hidden="false">HTML Spec - H1</h2>
+        <figure>
+          <a href="https://www.w3.org/TR/html52/sections.html#the-h1-h2-h3-h4-h5-and-h6-elements">
+          <img src="slides/html-spec-h1-2/html-spec-h1-2.png" alt="HTML Spec - H1" class="contain" data-src="https://www.w3.org/TR/html52/sections.html#the-h1-h2-h3-h4-h5-and-h6-elements">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="34" data-src="slides/bread-css">
+        <h2 aria-hidden="false">Styling vs Semantics</h2>
+        <figure>
+          <p>If I use CSS and a &lt;style&gt; element to make our &lt;h2&gt; elements appear larger than our &lt;h1&gt;, does it change the <span class="highlight">semantics</span> as well?</p>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="35" data-src="slides/bread-css-css">
+        <h2 hidden="" aria-hidden="false">Bread CSS</h2>
+        <figure>
+<pre><code>
+&lt;head&gt;
+  &lt;style&gt;
+    h1{
+      font-size: 1em;
+    }
+
+    h2{
+      font-size: 2em;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h1&gt;No Knead Bread&lt;/h1&gt;
+  [snip]
+</code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="36" data-src="slides/bread-css-rendered">
+        <h2 hidden="" aria-hidden="false">Bread CSS</h2>
+        <figure>
+          <img src="slides/bread-css-rendered/bread-css-rendered.png" alt="Bread CSS" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="37" data-src="slides/html-spec-h1-3">
+        <h2 hidden="" aria-hidden="false">HTML Spec - H1</h2>
+        <figure>
+          <a href="https://www.w3.org/TR/html52/sections.html#the-h1-h2-h3-h4-h5-and-h6-elements">
+            <img src="slides/html-spec-h1-3/html-spec-h1-3.png" alt="HTML Spec - H1" class="contain" data-src="https://www.w3.org/TR/html52/sections.html#the-h1-h2-h3-h4-h5-and-h6-elements">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="38" data-src="slides/apple-voiceover">
+        <h2 hidden="" aria-hidden="false">Apple VoiceOver</h2>
+        <figure>
+          <a href="https://www.apple.com/accessibility/iphone/vision/">
+          <img src="slides/apple-voiceover/apple-voiceover.png" alt="Apple VoiceOver" class="contain" data-src="https://www.apple.com/accessibility/iphone/vision/<Paste>">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="39" data-src="slides/bread-apple-voiceover">
+        <h2 hidden="" aria-hidden="false">Bread - Apple VoiceOver</h2>
+        <figure>
+          <video src="/slides/en-us/slides/bread-apple-voiceover/bread-apple-voiceover.mov" controls="">
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </video></figure>
+      </section>
+      <section id="40" data-src="slides/browser-market-share-mar-2019">
+        <h2 hidden="" aria-hidden="false">Browser Market Share - Mar 2019</h2>
+        <figure>
+          <a href="https://www.w3counter.com/globalstats.php">
+          <img src="slides/browser-market-share-mar-2019/browser-market-share-mar-2019.png" alt="Browser Market Share - Mar 2019" class="contain" data-src="https://www.w3counter.com/globalstats.php">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="41" data-src="slides/browser-market-share-mar-2019-2">
+        <h2 hidden="" aria-hidden="false">Browser Market Share - Mar 2019</h2>
+        <figure>
+          <a href="https://www.w3counter.com/globalstats.php">
+          <img src="slides/browser-market-share-mar-2019-2/browser-market-share-mar-2019-2.png" alt="Browser Market Share - Mar 2019" class="contain" data-src="https://www.w3counter.com/globalstats.php">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="42" data-src="slides/world-disability-percentage">
+        <h2 hidden="" aria-hidden="false">World Disability Percentage</h2>
+        <figure>
+          <a href="https://www.worldbank.org/en/topic/disability">
+          <img src="slides/world-disability-percentage/world-disability-percentage.png" alt="World Disability Percentage" class="contain" data-src="https://www.worldbank.org/en/topic/disability">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="43" data-src="slides/india-largest-blind-population">
+        <h2 hidden="" aria-hidden="false">India has the World's Largest Blind Population</h2>
+        <figure>
+          <a href="https://timesofindia.indiatimes.com/india/India-has-largest-blind-population/articleshow/2447603.cms">
+          <img src="slides/india-largest-blind-population/india-largest-blind-population.png" alt="India has the World's Largest Blind Population" class="contain" data-src="https://timesofindia.indiatimes.com/india/India-has-largest-blind-population/articleshow/2447603.cms">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="44" data-src="slides/a11y-webaim-analysis">
+        <h2 hidden="" aria-hidden="false">A11y WebAim Analysis</h2>
+        <figure>
+          <a href="https://webaim.org/projects/million/">
+          <img src="slides/a11y-webaim-analysis/a11y-webaim-analysis.png" alt="A11y WebAim Analysis" class="contain" data-src="https://webaim.org/projects/million/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="45" data-src="slides/a11y-webaim-analysis-2">
+        <h2 hidden="" aria-hidden="false">A11y WebAim Analysis</h2>
+        <figure>
+          <a href="https://webaim.org/projects/million/">
+          <img src="slides/a11y-webaim-analysis-2/a11y-webaim-analysis-2.png" alt="A11y WebAim Analysis" class="contain" data-src="https://webaim.org/projects/million/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="46" data-src="slides/a11y-webaim-analysis-3">
+        <h2 hidden="" aria-hidden="false">A11y WebAim Analysis</h2>
+        <figure>
+          <a href="https://webaim.org/projects/million/">
+          <img src="slides/a11y-webaim-analysis-3/a11y-webaim-analysis-3.png" alt="A11y WebAim Analysis" class="contain" data-src="https://webaim.org/projects/million/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="47" data-src="slides/a11y-webaim-analysis-4">
+        <h2 hidden="" aria-hidden="false">A11y WebAim Analysis</h2>
+        <figure>
+          <a href="https://webaim.org/projects/million/">
+          <img src="slides/a11y-webaim-analysis-4/a11y-webaim-analysis-4.png" alt="A11y WebAim Analysis" class="contain" data-src="https://webaim.org/projects/million/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="48" data-src="slides/tim-berners-lee-universality">
+        <h2 hidden="" aria-hidden="false">Tim Berners-Lee Universality</h2>
+        <figure>
+          <img src="slides/tim-berners-lee-universality/tim-berners-lee-universality.png" alt="Tim Berners-Lee Universality" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="49" data-src="slides/w3c-web-mobile-a11y-overlap">
+        <h2 hidden="" aria-hidden="false">w3c-web-mobile-a11y-overlap</h2>
+        <figure>
+          <a href="https://www.w3.org/WAI/standards-guidelines/wcag-mobile-overlap/">
+          <img src="slides/w3c-web-mobile-a11y-overlap/w3c-web-mobile-a11y-overlap.png" alt="w3c-web-mobile-a11y-overlap" class="contain" data-src="https://www.w3.org/WAI/standards-guidelines/wcag-mobile-overlap/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="50" data-src="slides/w3c-web-mobile-a11y-overlap-2">
+        <h2 hidden="" aria-hidden="false">w3c-web-mobile-a11y-overlap</h2>
+        <figure>
+          <a href="https://www.w3.org/WAI/standards-guidelines/wcag-mobile-overlap/">
+          <img src="slides/w3c-web-mobile-a11y-overlap-2/w3c-web-mobile-a11y-overlap-2.png" alt="w3c-web-mobile-a11y-overlap" class="contain" data-src="https://www.w3.org/WAI/standards-guidelines/wcag-mobile-overlap/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="51" data-src="slides/spacer">
+        <h2 hidden="" aria-hidden="false"></h2>
+        <figure>
+&nbsp;
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="52" data-src="slides/ecmascript-wiki">
+        <h2 hidden="" aria-hidden="false">ECMAScript</h2>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/ECMAScript">
+          <img src="slides/ecmascript-wiki/ecmascript-wiki.png" alt="ECMAScript" class="contain" data-src="https://en.wikipedia.org/wiki/ECMAScript">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="53" data-src="slides/ecmascript-wiki-versions">
+        <h2 hidden="" aria-hidden="false">ECMAScript Versions</h2>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/ECMAScript#Versions">
+          <img src="slides/ecmascript-wiki-versions/ecmascript-wiki-versions.png" alt="ECMAScript Versions" class="contain" data-src="https://en.wikipedia.org/wiki/ECMAScript#Versions">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="54" data-src="slides/ecmascript-wiki-versions-2">
+        <h2 hidden="" aria-hidden="false">ECMAScript Versions</h2>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/ECMAScript#Versions">
+          <img src="slides/ecmascript-wiki-versions-2/ecmascript-wiki-versions-2.png" alt="ECMAScript Versions" class="contain" data-src="https://en.wikipedia.org/wiki/ECMAScript#Versions">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="55" data-src="slides/ecmascript-spec">
+        <h2 hidden="" aria-hidden="false">ECMAScript Spec</h2>
+        <figure>
+          <a href="http://www.ecma-international.org/ecma-262/9.0/index.html">
+          <img src="slides/ecmascript-spec/ecmascript-spec.png" alt="ECMAScript Spec" class="contain" data-src="http://www.ecma-international.org/ecma-262/9.0/index.html">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="56" data-src="slides/ecmascript-spec-web-scripting">
+        <h2 hidden="" aria-hidden="false">ECMAScript Web Scripting</h2>
+        <figure>
+          <a href="http://www.ecma-international.org/ecma-262/9.0/index.html#sec-web-scripting">
+          <img src="slides/ecmascript-spec-web-scripting/ecmascript-spec-web-scripting.png" alt="ECMAScript Web Scripting" class="contain" data-src="http://www.ecma-international.org/ecma-262/9.0/index.html#sec-web-scripting">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="57" data-src="slides/ecmascript-spec-reserved-words">
+        <h2 hidden="" aria-hidden="false">ECMAScript Spec Reserved Words</h2>
+        <figure>
+          <a href="http://www.ecma-international.org/ecma-262/9.0/index.html#sec-grammar-summary">
+          <img src="slides/ecmascript-spec-reserved-words/ecmascript-spec-reserved-words.png" alt="ECMAScript Spec Reserved Words" class="contain" data-src="http://www.ecma-international.org/ecma-262/9.0/index.html#sec-grammar-summary">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="58" data-src="slides/script-mdn">
+        <h2 hidden="" aria-hidden="false">Script MDN</h2>
+        <figure>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script&lt;Paste&gt;">
+          <img src="slides/script-mdn/script-mdn.png" alt="Script MDN" class="contain" data-src="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="59" data-src="slides/script-mdn-defer">
+        <h2 hidden="" aria-hidden="false">Script MDN</h2>
+        <figure>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">
+          <img src="slides/script-mdn-defer/script-mdn-defer.png" alt="Script MDN" class="contain" data-src="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="60" data-src="slides/bread-js">
+        <h2 hidden="" aria-hidden="false">Bread JS</h2>
+        <figure>
+<pre><code>
+&lt;script&gt;
+  window.addEventListener('load', init);
+
+  function init(){
+    let b = document.querySelector('button');
+    b.addEventListener('click', readIntro);
+  }
+
+  function readIntro(event){
+    let paragraphs = document.querySelectorAll('p');
+    for(let p of paragraphs){
+      let msg = new SpeechSynthesisUtterance(p.innerText);
+      window.speechSynthesis.speak(msg);
+    }
+  }
+&lt;/script&gt;
+&lt;button&gt;Read&lt;/button&gt;
+</code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="61" data-src="slides/web-summary">
+        <h2 aria-hidden="false">What Have We Learned?</h2>
+        <figure>
+          <table>
+            <tbody><tr>
+              <td style="text-align: right">HTML</td> <td>== <span class="highlight">Semantics</span></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">CSS</td> <td>== <span class="highlight">Styling</span></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">JS</td> <td>== <span class="highlight">Event-Driven Behavior</span></td>
+            </tr>
+          </tbody></table>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="62" data-src="slides/spacer">
+        <h2 hidden="" aria-hidden="false"></h2>
+        <figure>
+&nbsp;
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      
+
+      <section id="63" data-src="slides/alan-perlis-fools-ignore-complexity">
+        <h2 hidden="" aria-hidden="false">Alan Perlis - Fools Ignore Complexity</h2>
+        <figure>
+          <img src="slides/alan-perlis-fools-ignore-complexity/alan-perlis-fools-ignore-complexity.jpg" alt="Alan Perlis - Fools Ignore Complexity" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="64" data-src="slides/title-act-2">
+        <h2 aria-hidden="false">Act 2</h2>
+        <figure>
+          <h3>The Tragedy of  <span class="highlight">Frameworks</span><br>
+              <i>- or -</i><br>
+              When Free is <span class="highlight">Too Expensive</span>    </h3>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="65" data-src="slides/react-angular-vue">
+        <h2 hidden="" aria-hidden="false">React Angular Vue</h2>
+        <figure>
+          <img src="slides/react-angular-vue/react-angular-vue.jpg" alt="React Angular Vue" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="66" data-src="slides/margaret-hamilton-react-helloworld">
+        <h2 hidden="" aria-hidden="false">Margaret Hamilton - React HelloWorld</h2>
+        <figure>
+          <a href="https://twitter.com/thomasfuchs/status/1103700462107164672">
+          <img src="slides/margaret-hamilton-react-helloworld/margaret-hamilton-react-helloworld.png" alt="Margaret Hamilton - React HelloWorld" class="contain" data-src="https://twitter.com/thomasfuchs/status/1103700462107164672">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="67" data-src="slides/margaret-hamilton-react-helloworld-2">
+        <h2 hidden="" aria-hidden="false">Margaret Hamilton - React HelloWorld</h2>
+        <figure>
+          <a href="https://twitter.com/garybernhardt/status/1104150731710324736">
+          <img src="slides/margaret-hamilton-react-helloworld-2/margaret-hamilton-react-helloworld-2.png" alt="Margaret Hamilton - React HelloWorld" class="contain" data-src="https://twitter.com/garybernhardt/status/1104150731710324736">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="68" data-src="slides/margaret-hamilton-react-helloworld-3">
+        <h2 hidden="" aria-hidden="false">Margaret Hamilton - React HelloWorld</h2>
+        <figure>
+          <a href="https://twitter.com/garybernhardt/status/1104150731710324736">
+          <img src="slides/margaret-hamilton-react-helloworld-3/margaret-hamilton-react-helloworld-3.png" alt="Margaret Hamilton - React HelloWorld" class="contain" data-src="https://twitter.com/garybernhardt/status/1104150731710324736">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="69" data-src="slides/margaret-hamilton-react-helloworld-4">
+        <h2 hidden="" aria-hidden="false">Margaret Hamilton - React HelloWorld</h2>
+        <figure>
+          <a href="https://twitter.com/garybernhardt/status/1104150731710324736">
+          <img src="slides/margaret-hamilton-react-helloworld-4/margaret-hamilton-react-helloworld-4.png" alt="Margaret Hamilton - React HelloWorld" class="contain" data-src="https://twitter.com/garybernhardt/status/1104150731710324736">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="70" data-src="slides/react-analysis">
+        <h2 hidden="" aria-hidden="false">React Analysis</h2>
+        <figure>
+<pre><code>
+$ npx create-react-app my-app
+npx: installed 63 in 4.11s
+
+Creating a new React app in 
+/Users/scott/notes/frameworks/react/my-app.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts...
+
+added 1987 packages from 735 contributors and audited 
+36252 packages in 64.389s
+found 68 vulnerabilities (63 low, 5 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Happy hacking!
+</code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="71" data-src="slides/js-libs-security">
+        <h2 hidden="" aria-hidden="false">JavaScript Library Security</h2>
+        <figure>
+          <a href="https://snyk.io/blog/known-vulnerabilities-in-javascript/&lt;Paste&gt;">
+          <img src="slides/js-libs-security/js-libs-security.png" alt="JavaScript Library Security" class="contain" data-src="https://snyk.io/blog/known-vulnerabilities-in-javascript/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="72" data-src="slides/js-libs-outdated-2">
+        <h2 hidden="" aria-hidden="false">JavaScript Libraries Outdated</h2>
+        <figure>
+          <a href="https://blog.acolyer.org/2017/03/07/thou-shalt-not-depend-on-me-analysing-the-use-of-outdated-javascript-libraries-on-the-web/">
+          <img src="slides/js-libs-outdated-2/js-libs-outdated-2.png" alt="JavaScript Libraries Outdated" class="contain" data-src="https://blog.acolyer.org/2017/03/07/thou-shalt-not-depend-on-me-analysing-the-use-of-outdated-javascript-libraries-on-the-web/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <!-- <section data-src="slides/js-libs-security-2"></section> -->
+      <section id="73" data-src="slides/js-libs-security-3">
+        <h2 hidden="" aria-hidden="false">JavaScript Library Security</h2>
+        <figure>
+          <a href="https://snyk.io/blog/known-vulnerabilities-in-javascript/&lt;Paste&gt;">
+          <img src="slides/js-libs-security-3/js-libs-security-3.png" alt="JavaScript Library Security" class="contain" data-src="https://snyk.io/blog/known-vulnerabilities-in-javascript/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <!-- <section data-src="slides/js-libs-outdated"></section> -->
+      <section id="74" data-src="slides/js-libs-outdated-3">
+        <h2 hidden="" aria-hidden="false">JavaScript Libraries Outdated</h2>
+        <figure>
+          <a href="https://blog.acolyer.org/2017/03/07/thou-shalt-not-depend-on-me-analysing-the-use-of-outdated-javascript-libraries-on-the-web/">
+          <img src="slides/js-libs-outdated-3/js-libs-outdated-3.png" alt="JavaScript Libraries Outdated" class="contain" data-src="https://blog.acolyer.org/2017/03/07/thou-shalt-not-depend-on-me-analysing-the-use-of-outdated-javascript-libraries-on-the-web/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <!-- <section data-src="slides/react-analysis-2"></section> -->
+      <section class="theme-invert" id="75" data-src="slides/angular-analysis">
+        <h2 hidden="" aria-hidden="false">Angular Analysis</h2>
+        <figure>
+<pre><code>
+$ ng new my-app
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? CSS
+
+&gt; node-sass@4.11.0 install 
+Downloading binary from https://github.com/sass/node-sass/
+releases/download/v4.11.0/darwin-x64-64_binding.node
+
+Testing binary
+Binary is fine
+added 1142 packages from 1036 contributors and audited 
+42608 packages in 68.359s
+found 1 high severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+</code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="76" data-src="slides/vue-analysis">
+        <h2 hidden="" aria-hidden="false">Vue Analysis</h2>
+        <figure>
+<pre><code>
+$ npm install -g @vue/cli
+npm WARN deprecated cross-spawn-async@2.2.5: 
+cross-spawn no longer requires a build toolchain, use 
+it instead
+
+node-pre-gyp WARN Using request for node-pre-gyp https 
+download 
+
+npm WARN ts-node@8.0.3 requires a peer of 
+typescript@&gt;=2.0 but none is installed. You must 
+install peer dependencies yourself.
+
+npm WARN apollo-tracing@0.5.2 requires a peer of 
+graphql@0.10.x - 14.1.x but none is installed. You must 
+install peer dependencies yourself.
+
++ @vue/cli@3.5.5
+added 749 packages from 521 contributors in 58.115s
+</code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="77" data-src="slides/the-cost-of-javascript-median">
+        <h2 hidden="" aria-hidden="false">The Cost of JavaScript - Median</h2>
+        <figure>
+          <a href="https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4">
+          <img src="slides/the-cost-of-javascript-median/the-cost-of-javascript-median.png" alt="The Cost of JavaScript - Median" class="contain" data-src="https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="78" data-src="slides/page-weight">
+        <h2 hidden="" aria-hidden="false">Page Weight</h2>
+        <figure>
+          <a href="https://twitter.com/katiehempenius/status/1103005053353369600/photo/1">
+          <img src="slides/page-weight/page-weight.png" alt="Page Weight" class="contain" data-src="https://twitter.com/katiehempenius/status/1103005053353369600/photo/1">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="79" data-src="slides/the-cost-of-javascript-popular-websites">
+        <h2 hidden="" aria-hidden="false">The Cost of JavaScript - Popular Websites</h2>
+        <figure>
+          <a href="https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4">
+          <img src="slides/the-cost-of-javascript-popular-websites/the-cost-of-javascript-popular-websites.png" alt="The Cost of JavaScript - Popular Websites" class="contain" data-src="https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="80" data-src="slides/tti-facts-download">
+        <h2 hidden="" aria-hidden="false">TTI Facts - Download</h2>
+        <figure>
+          <a href="https://gotchibox.com/blogs/news/pagespeed-facts-and-stats-shown-by-google-chromes-lighthouse-tool">
+          <img src="slides/tti-facts-download/tti-facts-download.png" alt="TTI Facts - Download" class="contain" data-src="https://gotchibox.com/blogs/news/pagespeed-facts-and-stats-shown-by-google-chromes-lighthouse-tool">
+          </a>
+
+          <figcaption>
+            <p>
+            Well, it takes approximately 5 seconds to download 1mb over a 3g mobile network connection. Fun fact: over 75% of the world is on a 3g network or slower. 
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="81" data-src="slides/react-faster-than-dom">
+        <h2 hidden="" aria-hidden="false">React Faster than DOM</h2>
+        <figure>
+          <a href="https://twitter.com/dan_abramov/status/842329893044146176">
+          <img src="slides/react-faster-than-dom/react-faster-than-dom.png" alt="React faster than DOM" class="contain" data-src="https://twitter.com/dan_abramov/status/842329893044146176">
+          </a>
+
+          <figcaption>
+            <p>
+            But isn't React's Virtual DOM faster than the browser-native DOM?
+            </p>
+
+            <p>
+              Dan Abramov -- creator of Redux and top committer to React -- gives a quiet, thoughtful, even-handed response to this.
+            </p>
+
+            <p>
+              "We don't claim that React is faster than the native DOM. React can't be faster"
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="82" data-src="slides/performance-cost-of-react">
+        <h2 hidden="" aria-hidden="false">The Performance Cost of React</h2>
+        <figure>
+          <a href="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          <img src="slides/performance-cost-of-react/performance-cost-of-react.png" alt="The Performance Cost of React" class="contain" data-src="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          </a>
+
+          <figcaption>
+            <p>
+            Oh Internet, I love it when you have already done my work for me!
+            </p>
+
+            <p>
+              This author has written up a nice, detailed examination of the performance costs of React. And notice that this isn't a hit-job or a cheap-shot. He likes React as a templating engine, but he also recognizes that there's a lot of overhead.
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="83" data-src="slides/performance-cost-of-react-2">
+        <h2 hidden="" aria-hidden="false">The Performance Cost of React</h2>
+        <figure>
+          <a href="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          <img src="slides/performance-cost-of-react-2/performance-cost-of-react-2.png" alt="The Performance Cost of React" class="contain" data-src="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          </a>
+
+          <figcaption>
+            <p>
+            To test the cost of React, the author created a simple app that builds an HTML table with 100 rows of employee data from a simple JSON file. 
+            </p>
+
+            <p>
+              In addition to React, he chose a couple of different popular templating libraries -- Nunjucks and Pug. (Pug used to be called Jade.)
+            </p>
+
+            <p>The author also included an example using raw JavaScript (ES6, or ECMAScript 6). Best of all, he gave us a static HTML and CSS baseline so that we can see the true cost of all of these different templating solutions. </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="84" data-src="slides/performance-cost-of-react-3">
+        <h2 hidden="" aria-hidden="false">The Performance Cost of React</h2>
+        <figure>
+          <a href="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          <img src="slides/performance-cost-of-react-3/performance-cost-of-react-3.png" alt="The Performance Cost of React" class="contain" data-src="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          </a>
+
+          <figcaption>
+            <p>
+            And here are the results. He tested with 1 concurrent user, 5 concurrent users, 50, 100, and 250. For throughput, higher bars on this graph represent better results. 
+            </p>
+
+            <p>
+              Notice the shortest bar on the graph? The green one, with roughly 300 requests per second? That's React. To be fair, that's React in dev mode. The author noticed the issue, and ran React in prod mode as well.
+            </p>
+
+            <p>
+              Notice the second shortest bar on the graph? That's React in prod mode. It averages roughly 1600 requests per second. While that might truly be "fast enough" for you, raw JavaScript will give you 1,000 more requests per second, and static HTML is more than twice as fast, giving you over 2,000 more requests per second than React.
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="85" data-src="slides/performance-cost-of-react-4">
+        <h2 hidden="" aria-hidden="false">The Performance Cost of React</h2>
+        <figure>
+          <a href="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          <img src="slides/performance-cost-of-react-4/performance-cost-of-react-4.png" alt="The Performance Cost of React" class="contain" data-src="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          </a>
+
+          <figcaption>
+            <p>
+            Here's another way to look at the results. This time, we look at the response time of an individual request in milliseconds. This time, shorter bars are better. 
+            </p>
+
+            <p>
+              Notice the longest bar on the graph? The green one? Yeah, that's React in dev mode again. The second longest bar on the graph? That's React in prod mode, with a response time of 150 milliseconds. 
+            </p>
+
+            <p>
+              Raw JavaScript is twice as fast, at 70 milliseconds per response. Static HTML is 5 times as fast, with a 30 millisecond response time. 
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="86" data-src="slides/framework-authors-case-against-frameworks">
+        <h2 hidden="" aria-hidden="false">A Framework Author's Case Against Frameworks</h2>
+        <figure>
+          <a href="https://www.youtube.com/watch?v=k7n2xnOiWI8&amp;feature=youtu.be">
+          <img src="slides/framework-authors-case-against-frameworks/framework-authors-case-against-frameworks.png" alt="A Framework Author's Case Against Frameworks" class="contain" data-src="https://www.youtube.com/watch?v=k7n2xnOiWI8&amp;feature=youtu.be">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="87" data-src="slides/netflix-removes-react">
+        <h2 hidden="" aria-hidden="false">Netflix Removes React</h2>
+        <figure>
+          <a href="https://twitter.com/netflixuie/status/923374215041912833?lang=en&lt;Paste&gt;">
+          <img src="slides/netflix-removes-react/netflix-removes-react.png" alt="Netflix Removes React" class="contain" data-src="https://twitter.com/netflixuie/status/923374215041912833?lang=en">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="88" data-src="slides/netflix-removes-react-details">
+        <h2 hidden="" aria-hidden="false">Netflix Removes React - Details</h2>
+        <figure>
+          <a href="https://jakearchibald.com/2017/netflix-and-react/">
+          <img src="slides/netflix-removes-react-details/netflix-removes-react-details.png" alt="Netflix Removes React - Details" class="contain" data-src="https://jakearchibald.com/2017/netflix-and-react/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="89" data-src="slides/spacer">
+        <h2 hidden="" aria-hidden="false"></h2>
+        <figure>
+&nbsp;
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+
+
+      <section id="90" data-src="slides/alan-perlis-simplicity-does-not-precede">
+        <h2 hidden="" aria-hidden="false">Alan Perlis - Simplicity Does Not Precede</h2>
+        <figure>
+          <a href="">
+          <img src="slides/alan-perlis-simplicity-does-not-precede/alan-perlis-simplicity-does-not-precede.jpg" alt="Simplicity does not precede complexity." class="contain" data-src="">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="91" data-src="slides/title-act-3">
+        <h2 aria-hidden="false">Act 3</h2>
+        <figure>
+          <h3><span class="highlight">Framework-Free</span> Web Development<br>
+              <i>- or -</i><br>
+              <span class="highlight">Simplicity</span>    </h3>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="92" data-src="slides/steve-jobs-simple-is-hard">
+        <h2 hidden="" aria-hidden="false">Steve Jobs - Simple is Hard</h2>
+        <figure>
+          <img src="slides/steve-jobs-simple-is-hard/simple-is-hard.png" alt="Steve Jobs - Simple is Hard" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="93" data-src="slides/rich-hickey-simplicity">
+        <h2 hidden="" aria-hidden="false">Rich Hickey - Simplicity</h2>
+        <figure>
+          <img src="slides/rich-hickey-simplicity/rich-hickey-simplicity.png" alt="Rich Hickey - Simplicity" class="contain" data-src="">
+          
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="94" data-src="slides/ryogm">
+        <h2 hidden="" aria-hidden="false">RYOGM</h2>
+        <figure>
+          <a href="http://thirstyhead.com/ryogm/1.html">
+          <img src="slides/ryogm/ryogm.png" alt="RYOGM" class="contain" data-src="http://thirstyhead.com/ryogm/1.html">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="95" data-src="slides/ryogm-github">
+        <h2 hidden="" aria-hidden="false">RYOGM</h2>
+        <figure>
+          <a href="https://github.com/ThirstyHead/ryogm">
+          <img src="slides/ryogm-github/ryogm-github.png" alt="RYOGM" class="contain" data-src="https://github.com/ThirstyHead/ryogm">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="96" data-src="slides/introducing-gauge">
+        <h2 hidden="" aria-hidden="false">Introducing Gauge</h2>
+        <figure>
+          <a href="https://thirstyhead.com/introducing-gauge/">
+          <img src="slides/introducing-gauge/introducing-gauge.png" alt="Introducing Gauge" class="contain" data-src="https://thirstyhead.com/introducing-gauge/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="97" data-src="slides/talk-o-vision-github">
+        <h2 hidden="" aria-hidden="false">Talk o Vision</h2>
+        <figure>
+          <a href="https://github.com/ThirstyHead/talk-o-vision">
+          <img src="slides/talk-o-vision-github/talk-o-vision-github.png" alt="Talk-o-vision" class="contain" data-src="https://github.com/ThirstyHead/talk-o-vision">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="98" data-src="slides/groceryworks">
+        <h2 hidden="" aria-hidden="false">GroceryWorks</h2>
+        <audio src="slides/groceryworks/audio.mp3"></audio>
+        <figure>
+          <a href="https://thirstyhead.com/groceryworks">https://thirstyhead.com/grocery
+            works</a>
+          <a href="https://thirstyhead.com/groceryworks">
+          <img src="slides/groceryworks/groceryworks.png" alt="GroceryWorks" class="contain" data-src="https://thirstyhead.com/groceryworks">
+          </a>
+
+          <figcaption>
+            <p>So, here's a website for a fictional grocery store called GroceryWorks. As you click around, you'll see that tapping the categories on the left show you different types of food items -- beans, nuts, pasta, produce, and so on. Clicking on a food item adds it to the cart on the right. Clicking on the food item again removes it from the cart. Clicking 'Purchase' allows you to place your order or cancel it.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+      <section id="99" data-src="slides/groceryworks-demo">
+        <h2 hidden="" aria-hidden="false">GroceryWorks Demo</h2>
+        <figure>
+          <a href="https://thirstyhead.com/groceryworks/demo/">
+          <img src="slides/groceryworks-demo/groceryworks-demo.png" alt="GroceryWorks Demo" class="contain" data-src="https://thirstyhead.com/groceryworks/demo/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="100" data-src="slides/groceryworks-github">
+        <h2 hidden="" aria-hidden="false">GroceryWorks GitHub</h2>
+        <figure>
+          <a href="https://github.com/ThirstyHead/groceryworks">
+          <img src="slides/groceryworks-github/groceryworks-github.png" alt="GroceryWorks GitHub" class="contain" data-src="https://github.com/ThirstyHead/groceryworks">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="101" data-src="slides/spacer">
+        <h2 hidden="" aria-hidden="false"></h2>
+        <figure>
+&nbsp;
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+
+
+      <section class="section-title" id="102" data-src="slides/conclusion">
+        <h2><span class="highlight">Conclusion</span></h2>
+        <audio src="slides/conclusion/audio.mp3"></audio>
+        <figure>
+          <figcaption>
+            <p>
+              So, what have we learned?
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+      <section id="103" data-src="slides/html-5.2-spec">
+        <h2 hidden="" aria-hidden="false">HTML 5.2 Spec</h2>
+        <figure>
+          <a href="https://www.w3.org/TR/html52/">
+          <img src="slides/html-5.2-spec/html-5.2-spec.png" alt="HTML 5.2 Spec" class="contain" data-src="https://www.w3.org/TR/html52/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="104" data-src="slides/ecmascript-spec">
+        <h2 hidden="" aria-hidden="false">ECMAScript Spec</h2>
+        <figure>
+          <a href="http://www.ecma-international.org/ecma-262/9.0/index.html">
+          <img src="slides/ecmascript-spec/ecmascript-spec.png" alt="ECMAScript Spec" class="contain" data-src="http://www.ecma-international.org/ecma-262/9.0/index.html">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="105" data-src="slides/apple-voiceover">
+        <h2 hidden="" aria-hidden="false">Apple VoiceOver</h2>
+        <figure>
+          <a href="https://www.apple.com/accessibility/iphone/vision/">
+          <img src="slides/apple-voiceover/apple-voiceover.png" alt="Apple VoiceOver" class="contain" data-src="https://www.apple.com/accessibility/iphone/vision/<Paste>">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="106" data-src="slides/a11y-webaim-analysis-3">
+        <h2 hidden="" aria-hidden="false">A11y WebAim Analysis</h2>
+        <figure>
+          <a href="https://webaim.org/projects/million/">
+          <img src="slides/a11y-webaim-analysis-3/a11y-webaim-analysis-3.png" alt="A11y WebAim Analysis" class="contain" data-src="https://webaim.org/projects/million/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="107" data-src="slides/tim-berners-lee-universality">
+        <h2 hidden="" aria-hidden="false">Tim Berners-Lee Universality</h2>
+        <figure>
+          <img src="slides/tim-berners-lee-universality/tim-berners-lee-universality.png" alt="Tim Berners-Lee Universality" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="108" data-src="slides/netflix-removes-react">
+        <h2 hidden="" aria-hidden="false">Netflix Removes React</h2>
+        <figure>
+          <a href="https://twitter.com/netflixuie/status/923374215041912833?lang=en&lt;Paste&gt;">
+          <img src="slides/netflix-removes-react/netflix-removes-react.png" alt="Netflix Removes React" class="contain" data-src="https://twitter.com/netflixuie/status/923374215041912833?lang=en">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="109" data-src="slides/react-faster-than-dom">
+        <h2 hidden="" aria-hidden="false">React Faster than DOM</h2>
+        <figure>
+          <a href="https://twitter.com/dan_abramov/status/842329893044146176">
+          <img src="slides/react-faster-than-dom/react-faster-than-dom.png" alt="React faster than DOM" class="contain" data-src="https://twitter.com/dan_abramov/status/842329893044146176">
+          </a>
+
+          <figcaption>
+            <p>
+            But isn't React's Virtual DOM faster than the browser-native DOM?
+            </p>
+
+            <p>
+              Dan Abramov -- creator of Redux and top committer to React -- gives a quiet, thoughtful, even-handed response to this.
+            </p>
+
+            <p>
+              "We don't claim that React is faster than the native DOM. React can't be faster"
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="110" data-src="slides/performance-cost-of-react-3">
+        <h2 hidden="" aria-hidden="false">The Performance Cost of React</h2>
+        <figure>
+          <a href="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          <img src="slides/performance-cost-of-react-3/performance-cost-of-react-3.png" alt="The Performance Cost of React" class="contain" data-src="https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js">
+          </a>
+
+          <figcaption>
+            <p>
+            And here are the results. He tested with 1 concurrent user, 5 concurrent users, 50, 100, and 250. For throughput, higher bars on this graph represent better results. 
+            </p>
+
+            <p>
+              Notice the shortest bar on the graph? The green one, with roughly 300 requests per second? That's React. To be fair, that's React in dev mode. The author noticed the issue, and ran React in prod mode as well.
+            </p>
+
+            <p>
+              Notice the second shortest bar on the graph? That's React in prod mode. It averages roughly 1600 requests per second. While that might truly be "fast enough" for you, raw JavaScript will give you 1,000 more requests per second, and static HTML is more than twice as fast, giving you over 2,000 more requests per second than React.
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="theme-invert" id="111" data-src="slides/react-analysis">
+        <h2 hidden="" aria-hidden="false">React Analysis</h2>
+        <figure>
+<pre><code>
+$ npx create-react-app my-app
+npx: installed 63 in 4.11s
+
+Creating a new React app in 
+/Users/scott/notes/frameworks/react/my-app.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts...
+
+added 1987 packages from 735 contributors and audited 
+36252 packages in 64.389s
+found 68 vulnerabilities (63 low, 5 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Happy hacking!
+</code></pre>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="112" data-src="slides/steve-jobs-simple-is-hard">
+        <h2 hidden="" aria-hidden="false">Steve Jobs - Simple is Hard</h2>
+        <figure>
+          <img src="slides/steve-jobs-simple-is-hard/simple-is-hard.png" alt="Steve Jobs - Simple is Hard" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="113" data-src="slides/proto-bread-2">
+        <h2 hidden="" aria-hidden="false">Proto-Bread 2</h2>
+        <figure>
+          <img src="slides/proto-bread-2/proto-bread-2.jpg" alt="Proto-bread" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="114" data-src="slides/web-summary">
+        <h2 aria-hidden="false">What Have We Learned?</h2>
+        <figure>
+          <table>
+            <tbody><tr>
+              <td style="text-align: right">HTML</td> <td>== <span class="highlight">Semantics</span></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">CSS</td> <td>== <span class="highlight">Styling</span></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">JS</td> <td>== <span class="highlight">Event-Driven Behavior</span></td>
+            </tr>
+          </tbody></table>
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="115" data-src="slides/naan">
+        <h2 hidden="" aria-hidden="false">Naan</h2>
+        <figure>
+          <a href="https://www.196flavors.com/india-naan/">
+          <img src="slides/naan/naan.jpg" alt="Naan" class="contain" data-src="https://www.196flavors.com/india-naan/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="main-title" id="116" data-src="slides/title">
+        <h2 hidden="" aria-hidden="false"></h2>
+        <figure>
+          <div class="banner">
+          The Framework-Free Web 
+ 
+            <div class="subtitle">
+              Browser-Native Web Development
+            </div>
+            <div class="bio">
+              <br>
+              Scott Davis<br>
+              <a href="mailto:scott@thirstyhead.com">scott@thirstyhead.com</a><br>
+              <a href="https://twitter.com/scottdavis99">@scottdavis99</a>
+            </div>
+          </div>
+          <figcaption>
+            <p>
+            </p>
+            <p>
+              Presented by Scott Davis. His email address is
+              scott@thirstyhead.com. His Twitter handle is @scottdavis99.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <script src="js/talk-o-vision.js"></script>
+  
+
+</body></html>
